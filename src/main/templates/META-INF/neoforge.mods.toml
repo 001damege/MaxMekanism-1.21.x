@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "MIT License"
+
+[[mods]]
+modId = "maxmekanism"
+version = "${mod_version}"
+displayName = "MaxMekanism"
+authors = "001_damege"
+
+description = '''Mekanism at maximum power'''
+
+[[mixins]]
+config = "maxmekanism.mixins.json"
+
+[[dependencies.maxmekanism]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.maxmekanism]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
